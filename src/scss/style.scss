@@ -1,20 +1,18 @@
 @import "fonts.scss";
-@import "icons.scss"; // если иконки через шрифты
+@import "icons.scss"; 
 
 // ------Vars------ 
 $fontFamily: "Europa";
 $fontSize: 16px;
-$mainTextColor: #fff;
-$textColor: #5BD2BF;
-$accentColor: #4C99BB;
+$mainTextColor: #484C63;
+$textColor: #1A2578;
+$accentColor: #BF0830;
 
-$bg: #02061A;
-$bgContent: #24293F;
-$gradient: linear-gradient(to right bottom, #1F143B, #3C8273);
+$bg: #fff;
+$gradient: linear-gradient(to left, #E3E7F6,  transparent);
 
-
-$maxWidth: 1440px;
-$maxWidthContainer: 1080px;
+$maxWidth: 1408px;
+$maxWidthContainer: 1108px;
 
 $bp992: 991.98px;
 $bp768: 767.98px;
@@ -32,7 +30,6 @@ $burgerBP: $bp992;
 
 html,
 body {
-	// font-family: 'Comfortaa', cursive;
 	font-family: $fontFamily, sans-serif;
 	font-size: $fontSize;
 	font-weight: 400;
@@ -87,7 +84,7 @@ button {
 	padding: 14px 32px;
 	text-align: center;
 	transition: all 0.3s ease;
-	min-height: 20px;
+	min-height: 24px;
 	font-weight: 700;
 	color: #fff;
 	background-color: $accentColor;
@@ -100,8 +97,10 @@ button {
 	}
 	@media (max-width: $bp992) {
 		padding: 12px 26px;
-	}
+	}	
 }
 @import "header.scss";
 
 // -----Общие блоки-End -----
+
+

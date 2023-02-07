@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Europa;
+  font-display: swap;
+  src: url("../fonts/Europa-Bold.woff2") format("woff2"), url("../fonts/Europa-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Europa;
+  font-display: swap;
+  src: url("../fonts/Europa-Regular.woff2") format("woff2"), url("../fonts/Europa-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^=icon-]:before, [class*=" icon-"]:before {
+  display: block;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+
+.icon-instagram:before {
+  content: "\e901";
+}
+
+.icon-linkedin:before {
+  content: "\e902";
+}
+
+.icon-star:before {
+  content: "\e903";
+}
+
+.icon-twitter:before {
+  content: "\e904";
+}
+
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Europa", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #484C63;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  max-width: 1108px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #BF0830;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (any-hover: hover) {
+  .btn:hover {
+    background-color: #d30834;
+  }
+}
+@media (max-width: 991.98px) {
+  .btn {
+    padding: 12px 26px;
+  }
+}
+
+nav {
+  overflow: hidden;
+  background: linear-gradient(to left, #E3E7F6, transparent);
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.navbar__button {
+  margin-left: 30px;
+}
+
+.menu {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 60px;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+@media (max-width: 991.98px) {
+  .menu {
+    display: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: all;
+    animation: fade 0.1s linear;
+  }
+}
+.menu__item {
+  color: #646A89;
+}
+@media (any-hover: hover) {
+  .menu__item-link:hover {
+    color: #BF0830;
+  }
+}
+
+.burger {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .burger {
+    margin-left: 30px;
+    display: block;
+    height: 19px;
+    width: 30px;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+  }
+  .burger::before, .burger::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #BF0830;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .burger::before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger.active-burger::before {
+    transform: rotate(45deg);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    top: 9px;
+  }
+  .burger.active-burger::after {
+    transform: rotate(-45deg);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    bottom: 8px;
+  }
+  .burger.active-burger span {
+    transform: scale(0);
+  }
+  .burger span {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #BF0830;
+    transform: scale(1);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+}
