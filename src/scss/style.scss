@@ -30,6 +30,9 @@ $burgerBP: $bp992;
 
 html,
 body {
+	margin: 0;
+	height: 100%; // ------Фиксация-футера-внизу-страницы---------
+
 	font-family: $fontFamily, sans-serif;
 	font-size: $fontSize;
 	font-weight: 400;
@@ -70,6 +73,19 @@ button {
 	background-color: transparent;
 	border: none;
 }
+
+// ------Фиксация-футера-внизу-страницы---------
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+// ------Фиксация-футера-внизу-страницы-End--------
 
 .container {
 	max-width: $maxWidthContainer;
