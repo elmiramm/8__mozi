@@ -22,7 +22,7 @@ window.onload = function () {
 			const elem = targetElement.classList.contains('burger') ? targetElement : targetElement.closest('.burger');
 			elem.classList.toggle('active-burger');
 
-			const menuBody = document.querySelector('.menu');
+			const menuBody = document.querySelector('.header__menu');
 			menuBody.classList.toggle('menu-active');
 		}
 	}
