@@ -1,0 +1,39 @@
+.intro {
+	padding: 129px 0 210px;
+	background: $gradient;
+
+	&__body {
+		display: flex;
+		
+	}
+	&__content {
+		width: 512px;
+	}
+	&__title {
+		margin-bottom: 32px;
+	}
+	&__text {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+	&__btn {
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+	&__img {
+		flex: 1 1 auto;
+		position: relative;
+		& img {
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: -55px;
+			@media (max-width: $bp1200) {
+				width: 100%;
+			}
+		}
+	}
+}

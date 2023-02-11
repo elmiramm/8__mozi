@@ -77,7 +77,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Europa", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
   color: #484C63;
@@ -114,6 +114,7 @@ button {
   padding: 0;
   background-color: transparent;
   border: none;
+  font-family: inherit;
 }
 
 .wrapper {
@@ -134,17 +135,18 @@ button {
 }
 
 .btn {
+  min-height: 24px;
+  padding: 14px 32px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 14px 32px;
   text-align: center;
-  transition: all 0.3s ease;
-  min-height: 24px;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
   background-color: #BF0830;
   border-radius: 6px;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 @media (any-hover: hover) {
@@ -152,10 +154,23 @@ button {
     background-color: #d30834;
   }
 }
-@media (max-width: 991.98px) {
-  .btn {
-    padding: 12px 26px;
+.btn--white {
+  border: 1px solid #BF0830;
+  background-color: #fff;
+  color: #BF0830;
+}
+@media (any-hover: hover) {
+  .btn--white:hover {
+    color: #fff;
+    background-color: #BF0830;
   }
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.29;
+  font-weight: 700;
+  color: #1A2578;
 }
 
 .header {
@@ -168,6 +183,7 @@ button {
     top: 0;
     left: 0;
     z-index: 50;
+    background-color: #fff;
   }
 }
 .header::before {
@@ -223,6 +239,7 @@ button {
 @media (max-width: 991.98px) {
   .header__button {
     margin-left: 20px;
+    padding: 12px 26px;
   }
 }
 @media (max-width: 479.98px) {
@@ -347,5 +364,40 @@ button {
     background-color: #BF0830;
     transform: scale(1);
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+}
+
+.intro {
+  padding: 129px 0 210px;
+  background: linear-gradient(to left, #E3E7F6, transparent);
+}
+.intro__body {
+  display: flex;
+}
+.intro__content {
+  width: 512px;
+}
+.intro__title {
+  margin-bottom: 32px;
+}
+.intro__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+.intro__btn:not(:last-child) {
+  margin-right: 16px;
+}
+.intro__img {
+  flex: 1 1 auto;
+  position: relative;
+}
+.intro__img img {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -55px;
+}
+@media (max-width: 1199.98px) {
+  .intro__img img {
+    width: 100%;
   }
 }

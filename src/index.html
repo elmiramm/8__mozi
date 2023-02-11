@@ -10,7 +10,14 @@ title: "Mozilor"
 		@@include("html/header.html")
 
 		<main class="page">
-			Page
+			@@include("html/intro.html", {
+			title: "We build products to simplify work for businesses",
+			text: "Our next-gen products empower businesses to implement agility and accelerate growth.",
+			button: "Learn more",
+			whiteButton: "Work with us",
+			imageSrc: "img/intro-ingex.svg"
+			}
+			)
 		</main>
 
 		@@include("html/footer.html")

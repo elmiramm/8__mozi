@@ -3,7 +3,7 @@
 
 // ------Vars------ 
 $fontFamily: "Europa";
-$fontSize: 16px;
+$fontSize: 22px;
 $mainTextColor: #484C63;
 $textColor: #1A2578;
 $accentColor: #BF0830;
@@ -11,9 +11,9 @@ $accentColor: #BF0830;
 $bg: #fff;
 $gradient: linear-gradient(to left, #E3E7F6,  transparent);
 
-$maxWidth: 1408px;
 $maxWidthContainer: 1108px;
 
+$bp1200: 1199.98px;
 $bp992: 991.98px;
 $bp768: 767.98px;
 $bp480: 479.98px;
@@ -72,6 +72,7 @@ button {
 	padding: 0;
 	background-color: transparent;
 	border: none;
+	font-family: inherit;
 }
 
 // ------Фиксация-футера-внизу-страницы---------
@@ -94,29 +95,49 @@ button {
 }
 // -----Общие блоки-----
 .btn {
+	min-height: 24px;
+	padding: 14px 32px;
+
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 14px 32px;
 	text-align: center;
-	transition: all 0.3s ease;
-	min-height: 24px;
+
+	font-size: 16px;
 	font-weight: 700;
 	color: #fff;
+
 	background-color: $accentColor;
 	border-radius: 6px;
+
+	transition: all 0.3s ease;
 	cursor: pointer;
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: #d30834
 		}
 	}
-	@media (max-width: $bp992) {
-		padding: 12px 26px;
+
+	&--white {
+		border: 1px solid $accentColor;
+		background-color: #fff;
+		color: $accentColor;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background-color: $accentColor;
+			}
+		}
 	}	
+}
+.title {
+	font-size: 48px;
+	line-height: 1.29;
+	font-weight: 700;
+	color: $textColor;
 }
 @import "header.scss";
 
 // -----Общие блоки-End -----
 
-
+@import "intro.scss";
