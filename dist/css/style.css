@@ -220,6 +220,18 @@ button {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 991.98px) {
+  .header__button {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 479.98px) {
+  .header__button {
+    padding: 10px 10px;
+    margin-left: 15px;
+    font-size: 10px;
+  }
+}
 
 .logo {
   position: relative;
@@ -228,11 +240,22 @@ button {
 @media (max-width: 991.98px) {
   .logo {
     width: 180px;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 479.98px) {
+  .logo {
+    width: 100px;
   }
 }
 .logo img {
   display: block;
   max-width: 100%;
+}
+@media (max-width: 479.98px) {
+  .logo img {
+    width: 100px;
+  }
 }
 
 .menu {
@@ -265,7 +288,7 @@ button {
 }
 @media (max-width: 991.98px) {
   .burger {
-    margin-left: 30px;
+    margin-left: 20px;
     display: block;
     position: relative;
     height: 19px;
@@ -273,6 +296,13 @@ button {
     z-index: 3;
     cursor: pointer;
   }
+}
+@media (max-width: 991.98px) and (max-width: 479.98px) {
+  .burger {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 991.98px) {
   .burger::before, .burger::after {
     content: "";
     position: absolute;
@@ -281,12 +311,18 @@ button {
     background-color: #BF0830;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
+}
+@media (max-width: 991.98px) {
   .burger::before {
     top: 0;
   }
+}
+@media (max-width: 991.98px) {
   .burger::after {
     bottom: 0;
   }
+}
+@media (max-width: 991.98px) {
   .burger.active-burger::before {
     transform: rotate(45deg);
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -300,6 +336,8 @@ button {
   .burger.active-burger span {
     transform: scale(0);
   }
+}
+@media (max-width: 991.98px) {
   .burger span {
     position: absolute;
     top: 8px;

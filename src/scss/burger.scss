@@ -1,7 +1,7 @@
 .burger {
 	display: none;
 	@media (max-width: $burgerBP) {
-		margin-left: 30px;
+		margin-left: 20px;
 		display: block;
 		position: relative;
 		height: 19px;
@@ -10,6 +10,9 @@
 
 		cursor: pointer;
 	
+		@media (max-width: $bp480) {
+			margin-left: 15px;
+		}
 		&::before,
 		&::after {
 			content: "";

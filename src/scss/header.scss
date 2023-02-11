@@ -53,7 +53,14 @@
 		margin-left: 30px;
 		position: relative;
 		z-index: 3;
-		
+		@media (max-width: $burgerBP) {
+			margin-left: 20px;
+		}
+		@media (max-width: $bp480) {
+			padding: 10px 10px;
+			margin-left: 15px;
+			font-size: 10px;
+		}
 	}
 }
 
@@ -62,10 +69,17 @@
 	z-index: 3;
 	@media (max-width: $burgerBP) {
 		width: 180px;
+		flex: 1 1 auto;
+	}
+	@media (max-width: $bp480) {
+		width: 100px;
 	}
 	& img {
 		display: block;
 		max-width: 100%;
+		@media (max-width: $bp480) {
+			width: 100px;
+		}
 	}	
 }
 
