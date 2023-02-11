@@ -1,25 +1,80 @@
 .intro {
 	padding: 129px 0 210px;
 	background: $gradient;
-
+	@media (max-width: $bp1200) {
+		width: 100%;
+		padding: 129px 0 143px;
+	}
+	@media (max-width: $bp992) {
+		padding: 200px 0 82px;
+	}
+	@media (max-width: 830px) {
+		padding: 129px 0 78px;
+	}
+	@media (max-width: $bp768) {
+		padding: 100px 0 50px;
+	}
 	&__body {
 		display: flex;
 		
 	}
 	&__content {
 		width: 512px;
+		@media (max-width: $bp1200) {
+			width: 50%;
+		}
+		@media (max-width: $bp768) {
+			width: 60%;
+		}
+		@media (max-width: 690px) {
+			width: 100%;
+		}
 	}
 	&__title {
 		margin-bottom: 32px;
+		@media (max-width: $bp992) {
+		font-size: 40px;
+		margin-bottom: 18px;
+		}
+		@media (max-width: $bp768) {
+			font-size: 30px;
+			margin-bottom: 12px;
+			}
 	}
 	&__text {
 		&:not(:last-child) {
 			margin-bottom: 40px;
 		}
+		@media (max-width: $bp992) {
+			font-size: 18px;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: $bp768) {
+			font-size: 16px;
+			&:not(:last-child) {
+				margin-bottom: 18px;
+			}
+		}
+			
 	}
 	&__btn {
 		&:not(:last-child) {
 			margin-right: 16px;
+		}
+		@media (max-width: $bp768) {
+			padding: 10px 15px;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+		@media (max-width: $bp320) {
+			display: flex;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+				margin-right: 0px;
+			}
 		}
 	}
 
@@ -33,6 +88,16 @@
 			top: -55px;
 			@media (max-width: $bp1200) {
 				width: 100%;
+				top: -29px;
+			}
+			@media (max-width: $bp992) {
+				top: -102px;
+			}
+			@media (max-width: 830px) {
+				top: -23px;
+			}
+			@media (max-width: 690px) {
+				display: none;
 			}
 		}
 	}

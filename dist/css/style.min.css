@@ -223,6 +223,7 @@ button {
     overflow: auto;
     background-color: #484C63;
     transition: left 0.3s ease;
+    font-size: 28px;
   }
   .header__menu.menu-active {
     left: 0;
@@ -371,20 +372,101 @@ button {
   padding: 129px 0 210px;
   background: linear-gradient(to left, #E3E7F6, transparent);
 }
+@media (max-width: 1199.98px) {
+  .intro {
+    width: 100%;
+    padding: 129px 0 143px;
+  }
+}
+@media (max-width: 991.98px) {
+  .intro {
+    padding: 200px 0 82px;
+  }
+}
+@media (max-width: 830px) {
+  .intro {
+    padding: 129px 0 78px;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro {
+    padding: 100px 0 50px;
+  }
+}
 .intro__body {
   display: flex;
 }
 .intro__content {
   width: 512px;
 }
+@media (max-width: 1199.98px) {
+  .intro__content {
+    width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro__content {
+    width: 60%;
+  }
+}
+@media (max-width: 690px) {
+  .intro__content {
+    width: 100%;
+  }
+}
 .intro__title {
   margin-bottom: 32px;
+}
+@media (max-width: 991.98px) {
+  .intro__title {
+    font-size: 40px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro__title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
 }
 .intro__text:not(:last-child) {
   margin-bottom: 40px;
 }
+@media (max-width: 991.98px) {
+  .intro__text {
+    font-size: 18px;
+  }
+  .intro__text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro__text {
+    font-size: 16px;
+  }
+  .intro__text:not(:last-child) {
+    margin-bottom: 18px;
+  }
+}
 .intro__btn:not(:last-child) {
   margin-right: 16px;
+}
+@media (max-width: 767.98px) {
+  .intro__btn {
+    padding: 10px 15px;
+  }
+  .intro__btn:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 319.98px) {
+  .intro__btn {
+    display: flex;
+  }
+  .intro__btn:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
 }
 .intro__img {
   flex: 1 1 auto;
@@ -399,5 +481,21 @@ button {
 @media (max-width: 1199.98px) {
   .intro__img img {
     width: 100%;
+    top: -29px;
+  }
+}
+@media (max-width: 991.98px) {
+  .intro__img img {
+    top: -102px;
+  }
+}
+@media (max-width: 830px) {
+  .intro__img img {
+    top: -23px;
+  }
+}
+@media (max-width: 690px) {
+  .intro__img img {
+    display: none;
   }
 }
