@@ -135,9 +135,16 @@ button {
 	line-height: 1.29;
 	font-weight: 700;
 	color: $textColor;
+	@media (max-width: $bp992) {
+		font-size: 40px;
+		}
+	@media (max-width: $bp768) {
+			font-size: 30px;
+		}
 }
 @import "header.scss";
 
 // -----Общие блоки-End -----
 
 @import "intro.scss";
+@import "brands";

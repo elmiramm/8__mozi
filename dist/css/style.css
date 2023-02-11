@@ -172,6 +172,16 @@ button {
   font-weight: 700;
   color: #1A2578;
 }
+@media (max-width: 991.98px) {
+  .title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  }
+}
 
 .header {
   position: relative;
@@ -371,6 +381,7 @@ button {
 .intro {
   padding: 129px 0 210px;
   background: linear-gradient(to left, #E3E7F6, transparent);
+  margin-bottom: 101px;
 }
 @media (max-width: 1199.98px) {
   .intro {
@@ -391,6 +402,7 @@ button {
 @media (max-width: 767.98px) {
   .intro {
     padding: 100px 0 50px;
+    margin-bottom: 50px;
   }
 }
 .intro__body {
@@ -411,6 +423,7 @@ button {
 }
 @media (max-width: 690px) {
   .intro__content {
+    text-align: center;
     width: 100%;
   }
 }
@@ -419,13 +432,11 @@ button {
 }
 @media (max-width: 991.98px) {
   .intro__title {
-    font-size: 40px;
     margin-bottom: 18px;
   }
 }
 @media (max-width: 767.98px) {
   .intro__title {
-    font-size: 30px;
     margin-bottom: 12px;
   }
 }
@@ -497,5 +508,60 @@ button {
 @media (max-width: 690px) {
   .intro__img img {
     display: none;
+  }
+}
+
+.brands {
+  margin-bottom: 128px;
+}
+.brands__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.brands__title span {
+  color: #BF0830;
+}
+@media (max-width: 767.98px) {
+  .brands__title {
+    margin-bottom: 40px;
+  }
+}
+.brands__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+@media (max-width: 767.98px) {
+  .brands__content {
+    gap: 20px;
+  }
+}
+.brands__item:not(:nth-child(2)) svg path {
+  fill: #8F90A6;
+  transition: fill 0.3s ease;
+}
+.brands__item:nth-child(2) svg path:first-child {
+  fill: #8F90A6;
+  transition: fill 0.3s ease;
+}
+@media (any-hover: hover) {
+  .brands__item:hover:not(:nth-child(2)) svg path {
+    fill: #BF0830;
+  }
+  .brands__item:hover:nth-child(2) svg path:first-child {
+    fill: #BF0830;
+  }
+}
+@media (max-width: 767.98px) {
+  .brands__item {
+    width: 33.333%;
+    text-align: center;
+  }
+}
+@media (max-width: 479.98px) {
+  .brands__item {
+    width: 100%;
   }
 }
