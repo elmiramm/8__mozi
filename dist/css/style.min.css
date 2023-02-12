@@ -578,3 +578,57 @@ button {
     width: 100%;
   }
 }
+
+.products {
+  margin-bottom: 108px;
+}
+.products__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.products__subtitle {
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.69;
+  margin-bottom: 97px;
+}
+.products__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 530px;
+}
+.products__item {
+  max-width: 538px;
+  padding: 64px 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  box-shadow: 0px 25px 35px 0px rgba(22, 23, 72, 0.08), 0px 0px 8px 0px rgba(22, 23, 72, 0.07);
+  position: relative;
+  overflow: hidden;
+}
+.products__item-logo {
+  margin-bottom: 40px;
+}
+.products__item-text {
+  font-size: 24px;
+  line-height: 1.29;
+  margin-bottom: 32px;
+}
+.products__item-btn {
+  padding: 12px 24px;
+}
+.products__item-btn::before {
+  margin-right: 8px;
+}
+.products__item-img {
+  display: block;
+  position: absolute;
+  bottom: -83px;
+  right: 0;
+}
+.products__item-img--pos {
+  bottom: -194px;
+}
