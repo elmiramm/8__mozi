@@ -1,13 +1,21 @@
 .brands {
-	margin-bottom: 128px;
+	padding-bottom: 128px;
+	margin-bottom: 106px;
+	border-bottom: 1px solid rgba($color: #C5CBE2, $alpha: 0.5);
+	@media (max-width: $bp768) {
+		margin-bottom: 50px;
+		padding-bottom: 50px;
+	}
 	&__title {
 		text-align: center;
 		margin-bottom: 80px;
+		font-size: 36px;
 		& span {
 			color: $accentColor;
 		}
 		@media (max-width: $bp768) {
 			margin-bottom: 40px;
+			font-size: 30px;
 		}
 	}
 	&__content {
