@@ -9,14 +9,24 @@
 		text-align: center;
 		line-height: 1.69;
 		margin-bottom: 97px;
+		@media (max-width: $bp992) {
+			margin-bottom: 40px;
+		}
+	
 	}
 	&__body {
 		display: flex;
 		justify-content: space-between;
 		gap: 32px;
-		min-height: 530px;
+		@media (max-width: $bp992) {
+			flex-direction: column;
+		}
+		@media (max-width: $bp480) {
+			gap: 45px;
+		}
 	}
 	&__item {
+		min-height: 530px;
 		max-width: 538px;
 		padding: 64px 62px;
 
@@ -30,8 +40,23 @@
 
 		position: relative;
 		overflow: hidden;
+		@media (max-width: $bp992) {
+			max-width: 100%;
+		}
+		@media (max-width: 590px) {
+			min-height: 560px;
+		}
+		@media (max-width: $bp480) {
+			align-items: center;
+			text-align: center;
+			padding: 40px 20px 20px;
+		}
+		
 		&-logo {
 			margin-bottom: 40px;
+			@media (max-width: $bp992) {
+				max-width: 100%;
+			}
 		}
 		&-text {
 			font-size: 24px;
@@ -51,6 +76,9 @@
 			right: 0;
 			&--pos {
 				bottom: -194px;
+				@media (max-width: $bp992) {
+					bottom: -150px;
+				}
 			}
 		}
 	}
