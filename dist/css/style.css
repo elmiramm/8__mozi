@@ -679,10 +679,21 @@ button {
   background: linear-gradient(to left, #E3E7F6, transparent);
   padding: 73px 0;
 }
+@media (max-width: 767.98px) {
+  .info {
+    padding: 40px 0;
+  }
+}
 .info__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767.98px) {
+  .info__body {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .info__content {
   max-width: 416px;
