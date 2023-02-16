@@ -1,13 +1,9 @@
-.info {
-	background: $gradient;
-	padding: 73px 0;
-	margin-bottom: 98px;
+.join {
+	margin-top: 30px;
+	padding: 110px 0;
+	background:linear-gradient(to top, #E3E7F6,  transparent);
 	@media (max-width: $bp768) {
 		padding: 40px 0;
-		margin-bottom: 40px;
-	}
-	& .suptitle {
-		text-align: left;
 	}
 	&__body {
 		display: flex;
@@ -19,18 +15,20 @@
 		}
 	}
 	&__content {
-		max-width: 416px;
+		max-width: 363px;
 	}
 	&__text {
 		line-height: 1.69;
-		@media (max-width: $bp768) {
-			margin-bottom: 15px;
-		}
+		margin-bottom: 16px;
+	}
+	&__btn {
+		margin-bottom: 16px;
 	}
 	&__img {
-		max-width: 559px;
+		max-width: 523px;
 		& img {
 			width: 100%;
 		}
 	}
 }
+
