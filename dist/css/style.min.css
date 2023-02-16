@@ -674,3 +674,28 @@ button {
     bottom: -150px;
   }
 }
+
+.info {
+  background: linear-gradient(to left, #E3E7F6, transparent);
+  padding: 73px 0;
+}
+.info__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__content {
+  max-width: 416px;
+}
+.info__title {
+  margin-bottom: 16px;
+}
+.info__text {
+  line-height: 1.69;
+}
+.info__img {
+  max-width: 559px;
+}
+.info__img img {
+  width: 100%;
+}
