@@ -856,10 +856,12 @@ button {
 .info {
   background: linear-gradient(to left, #E3E7F6, transparent);
   padding: 73px 0;
+  margin-bottom: 98px;
 }
 @media (max-width: 767.98px) {
   .info {
     padding: 40px 0;
+    margin-bottom: 40px;
   }
 }
 .info__body {
@@ -884,4 +886,70 @@ button {
 }
 .info__img img {
   width: 100%;
+}
+
+.innovation .suptitle {
+  text-transform: uppercase;
+  color: #BF0830;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 16px;
+}
+@media (max-width: 991.98px) {
+  .innovation .suptitle {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}
+.innovation .title {
+  text-align: center;
+}
+.innovation__text {
+  text-align: center;
+  margin-bottom: 92px;
+}
+@media (max-width: 991.98px) {
+  .innovation__text {
+    margin-bottom: 50px;
+  }
+}
+.innovation .swiper {
+  margin: -64px -15px -20px;
+  padding: 64px 15px 20px;
+}
+.innovation .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.innovation .swiper-slide {
+  height: 119px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innovation .swiper-slide img {
+  display: block;
+  max-width: 100%;
+}
+@media (max-width: 991.98px) {
+  .innovation .swiper-slide img {
+    max-width: 95%;
+  }
+}
+.innovation .slider-arrows {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  z-index: 100;
+}
+.innovation .slider-arrow {
+  font-size: 24px;
+  cursor: pointer;
+}
+.innovation .slider-arrow--prev {
+  transform: rotate(180deg);
 }

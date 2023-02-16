@@ -1,8 +1,10 @@
 .info {
 	background: $gradient;
 	padding: 73px 0;
+	margin-bottom: 98px;
 	@media (max-width: $bp768) {
 		padding: 40px 0;
+		margin-bottom: 40px;
 	}
 	&__body {
 		display: flex;

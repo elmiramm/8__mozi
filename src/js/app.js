@@ -11,30 +11,34 @@ if (document.querySelector('.slider-innovation__body')) {
 		observeParents: true,
 		slidesPerView: 4,
 		spaceBetween: 30,
-		// watchOverflow: true,
+		watchOverflow: true,
 		speed: 800,
 		loop: true,
-		// loopAdditionalSlides: 8,
+		loopAdditionalSlides: 8,
 		preloadImage: false,
 		// parallax: true,
 		navigation: {
 			nextEl: '.slider-innovation .slider-arrow--next',
 			prevEl: '.slider-innovation .slider-arrow--prev',
 		},
-		// breakpoints: {
-		// 	279: {
-		// 		slidesPerView: 1.1,
-		// 		spaceBetween: 15,
-		// 	},
-		// 	768: {
-		// 		slidesPerView: 2,
-		// 		spaceBetween: 20,
-		// 	},
-		// 	992: {
-		// 		slidesPerView: 4,
-		// 		spaceBetween: 32,
-		// 	},
-		// }
+		breakpoints: {
+			279: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+			},
+			520: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+			1100: {
+				slidesPerView: 4,
+				spaceBetween: 30,
+			},
+		}
 	});
 }
 // ------Swiper-End-------
