@@ -15,6 +15,9 @@
 	@media (max-width: $bp768) {
 		padding: 100px 0 50px;
 		margin-bottom: 50px;
+		.page__products & {
+			padding: 100px 0 70px;
+		}
 	}
 	&__body {
 		display: flex;
@@ -61,6 +64,11 @@
 		}
 			
 	}
+	&__buttons {
+		.page__products & {
+			display: none;
+		}
+	}
 	&__btn {
 		&:not(:last-child) {
 			margin-right: 16px;
@@ -101,6 +109,30 @@
 			@media (max-width: 690px) {
 				display: none;
 			}
+		}
+		.page__products & {
+			& img {
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: 1px;
+			@media (max-width: $bp1200) {
+				width: 100%;
+				top: -29px;
+			}
+			@media (max-width: $bp992) {
+				top: -102px;
+			}
+			@media (max-width: 830px) {
+				top: 0px;
+			}
+				@media (max-width: $bp768) {
+				top: -9px;
+			}
+			@media (max-width: 690px) {
+				display: none;
+			}
+		}
 		}
 	}
 }
