@@ -570,6 +570,11 @@ button {
   }
 }
 
+.footer {
+  background-color: #0D123C;
+  color: #fff;
+}
+
 .intro {
   padding: 129px 0 210px;
   background: linear-gradient(to left, #E3E7F6, transparent);
