@@ -1,0 +1,46 @@
+.cookieyes {
+	margin-bottom: 149px;
+	@media (max-width: $bp992) {
+		margin-bottom: 50px;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: $bp992) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		}
+
+	}
+	&__content {
+		max-width: 405px;
+		@media (max-width: $bp992) {
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+	&__logo {
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+	&__text {
+		margin-bottom: 40px;
+	
+	}
+	&__btn {
+		@media (max-width: $bp992) {
+			margin-bottom: 30px;
+			}
+	}
+	&__img {
+		display: block;
+		width: 564px;
+		@media (max-width: $bp992) {
+			max-width: 100%
+			}
+		
+	}
+
+}

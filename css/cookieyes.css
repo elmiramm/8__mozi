@@ -1,0 +1,33 @@
+.cookieyes {
+  margin-bottom: 149px;
+}
+
+.cookieyes__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cookieyes__content {
+  max-width: 405px;
+}
+
+.cookieyes__logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.cookieyes__text {
+  margin-bottom: 40px;
+}
+
+.cookieyes__img {
+  display: block;
+  width: 564px;
+}
