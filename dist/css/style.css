@@ -574,6 +574,72 @@ button {
   background-color: #0D123C;
   color: #fff;
 }
+.footer__body {
+  display: flex;
+  padding: 55px 0 64px;
+  justify-content: space-between;
+}
+.footer__content {
+  max-width: 287px;
+}
+.footer__text {
+  margin-top: 25px;
+}
+.footer__nav {
+  display: flex;
+  gap: 97px;
+  font-size: 18px;
+}
+.footer__nav-title {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer__list-item {
+  margin-bottom: 21px;
+}
+.footer__list-link {
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .footer__list-link:hover {
+    color: #BF0830;
+  }
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer__social-item:hover .footer__social-link::before {
+  color: #BF0830;
+}
+.footer__social-link::before {
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .footer__social-link::before:hover {
+    color: #BF0830;
+  }
+}
+
+.copyright {
+  border-top: 1px solid rgba(197, 203, 226, 0.5);
+  padding: 29px 0 37px;
+}
+.copyright .container {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright__link {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+@media (any-hover: hover) {
+  .copyright__link:hover {
+    color: #BF0830;
+  }
+}
 
 .intro {
   padding: 129px 0 210px;
