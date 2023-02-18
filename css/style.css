@@ -1599,9 +1599,9 @@ button {
 @media (max-width: 991.98px) {
   .webtoffee__container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1612,7 +1612,7 @@ button {
 }
 
 .webtoffee__content {
-  max-width: 405px;
+  max-width: 470px;
 }
 
 @media (max-width: 991.98px) {
@@ -1624,7 +1624,7 @@ button {
 
 .webtoffee__logo {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .webtoffee__text {
@@ -1646,4 +1646,8 @@ button {
   .webtoffee__img {
     max-width: 100%;
   }
+}
+
+.questions {
+  text-align: center;
 }

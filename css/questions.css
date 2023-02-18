@@ -1,0 +1,24 @@
+.questions {
+  text-align: center;
+  padding: 136px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#E3E7F6), to(transparent));
+  background: linear-gradient(to top, #E3E7F6, transparent);
+}
+
+.questions .title {
+  margin-bottom: 20px;
+}
+
+.questions__text {
+  margin-bottom: 40px;
+}
+
+.questions__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}

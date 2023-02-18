@@ -1,8 +1,5 @@
 .webtoffee {
-	margin-bottom: 149px;
-	@media (max-width: $bp992) {
-		margin-bottom: 50px;
-	}
+	margin-bottom: 50px;
 	&__container {
 		display: flex;
 		align-items: center;

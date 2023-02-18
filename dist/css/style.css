@@ -1209,12 +1209,7 @@ button {
 }
 
 .webtoffee {
-  margin-bottom: 149px;
-}
-@media (max-width: 991.98px) {
-  .webtoffee {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 50px;
 }
 .webtoffee__container {
   display: flex;
@@ -1256,5 +1251,32 @@ button {
 @media (max-width: 991.98px) {
   .webtoffee__img {
     max-width: 100%;
+  }
+}
+
+.questions {
+  text-align: center;
+  padding: 136px 0;
+  background: linear-gradient(to top, #E3E7F6, transparent);
+}
+@media (max-width: 991.98px) {
+  .questions {
+    padding: 70px 0;
+  }
+}
+.questions .title {
+  margin-bottom: 20px;
+}
+.questions__text {
+  margin-bottom: 40px;
+}
+.questions__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 991.98px) {
+  .questions__buttons {
+    flex-direction: column;
   }
 }
