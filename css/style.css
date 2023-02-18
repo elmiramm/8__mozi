@@ -1058,7 +1058,7 @@ button {
 .page__products .intro__img img {
   display: block;
   position: absolute;
-  left: 0px;
+  left: -25px;
   top: 1px;
 }
 
@@ -1500,12 +1500,150 @@ button {
   width: 100%;
 }
 
+.cookieyes {
+  margin-bottom: 149px;
+}
+
+@media (max-width: 991.98px) {
+  .cookieyes {
+    margin-bottom: 50px;
+  }
+}
+
 .cookieyes__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+  .cookieyes__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .cookieyes__content {
-  max-width: 419px;
+  max-width: 405px;
+}
+
+@media (max-width: 991.98px) {
+  .cookieyes__content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.cookieyes__logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.cookieyes__text {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991.98px) {
+  .cookieyes__btn {
+    margin-bottom: 30px;
+  }
+}
+
+.cookieyes__img {
+  display: block;
+  width: 564px;
+}
+
+@media (max-width: 991.98px) {
+  .cookieyes__img {
+    max-width: 100%;
+  }
+}
+
+.webtoffee {
+  margin-bottom: 149px;
+}
+
+@media (max-width: 991.98px) {
+  .webtoffee {
+    margin-bottom: 50px;
+  }
+}
+
+.webtoffee__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 991.98px) {
+  .webtoffee__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.webtoffee__content {
+  max-width: 405px;
+}
+
+@media (max-width: 991.98px) {
+  .webtoffee__content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.webtoffee__logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.webtoffee__text {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991.98px) {
+  .webtoffee__btn {
+    margin-bottom: 30px;
+  }
+}
+
+.webtoffee__img {
+  display: block;
+  width: 564px;
+}
+
+@media (max-width: 991.98px) {
+  .webtoffee__img {
+    max-width: 100%;
+  }
 }

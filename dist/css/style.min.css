@@ -1207,3 +1207,50 @@ button {
     max-width: 100%;
   }
 }
+
+.webtoffee {
+  margin-bottom: 149px;
+}
+@media (max-width: 991.98px) {
+  .webtoffee {
+    margin-bottom: 50px;
+  }
+}
+.webtoffee__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .webtoffee__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.webtoffee__content {
+  max-width: 470px;
+}
+@media (max-width: 991.98px) {
+  .webtoffee__content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.webtoffee__logo {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+.webtoffee__text {
+  margin-bottom: 40px;
+}
+.webtoffee__img {
+  display: block;
+  width: 564px;
+}
+@media (max-width: 991.98px) {
+  .webtoffee__img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
