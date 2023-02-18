@@ -8,7 +8,7 @@
 		align-items: center;
 		justify-content: space-between;
 		@media (max-width: $bp992) {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
 		}
@@ -28,13 +28,17 @@
 	&__text {
 		margin-bottom: 40px;
 	}
+	&__btn {
+		@media (max-width: $bp992) {
+			margin-bottom: 30px;
+			}
+	}
 
 	&__img {
 		display: block;
 		width: 564px;
 		@media (max-width: $bp992) {
 			max-width: 100%;
-			margin-bottom: 30px;
 			}
 		
 	}
