@@ -1,21 +1,42 @@
-.whoweare {
-	background: $gradient;
-	padding-bottom: 157px;
+.wedo {
+	padding: 146px 0 152px;
 	@media (max-width: $bp992) {
-		padding-bottom: 50px;
+		padding: 50px 0;
 	}
 	&__container {
 		display: flex;
 		justify-content: center;
-		gap: 50px;
+		gap: 105px;
 		@media (max-width: $bp992) {
 			flex-direction: column-reverse;
 			align-items: center;
-
+			gap: 40px;
+		}
+	}
+	&__img {
+		position: relative;
+	}
+	&__img img {
+		width: 100%;
+	}
+	&__img img:last-child {
+		position: relative;
+		z-index: 2;
+	}
+	&__bg-img {
+		position: absolute;
+		min-width: 560px;
+		right: -40px;
+		top: -50px;
+		z-index: 1;
+		@media (max-width: $bp992) {
+			bottom: -80px;
+			right: -80px;
+			min-width: 353px;
 		}
 	}
 	&__content {
-		max-width: 405px;
+		max-width: 400px;
 		padding-top: 40px;
 		@media (max-width: $bp992) {
 			max-width: 100%;
@@ -31,25 +52,5 @@
 	}
 	&__text:not(:last-child) {
 		margin-bottom: 30px;
-	}
-	&__img {
-		position: relative;
-	}
-	&__img img {
-		width: 100%;
-	}
-	&__img img:last-child {
-		position: relative;
-		z-index: 2;
-	}
-	&__bg-img {
-		position: absolute;
-		right: -40px;
-		z-index: 1;
-		@media (max-width: $bp992) {
-			bottom: -80px;
-			right: -80px;
-		}
-
 	}
 }
