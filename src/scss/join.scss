@@ -7,6 +7,9 @@
 	}
 	.page__about & {
 		padding: 150px 0 157px;
+		@media (max-width: $bp992) {
+			padding: 50px 0;
+		}
 	}
 	
 	&__body {
@@ -42,6 +45,9 @@
 	}
 	& .bethenext {
 		padding-left: 80px;
+		@media (max-width: $bp480) {
+			width: 240px;
+		}
 	}
 }
 
