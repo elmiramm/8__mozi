@@ -1629,19 +1629,62 @@ button {
   display: flex;
   gap: 30px;
 }
+@media (max-width: 767.98px) {
+  .photos__body {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .photos__column {
   display: flex;
   flex-direction: column;
   gap: 50px;
   justify-content: space-between;
+  width: 50%;
+}
+@media (max-width: 991.98px) {
+  .photos__column {
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .photos__item {
+    width: 70%;
+    align-items: center;
+  }
+}
+@media (max-width: 680px) {
+  .photos__item {
+    width: 100%;
+  }
 }
 .photos__item .title {
   margin-top: 100px;
 }
+@media (max-width: 991.98px) {
+  .photos__item .title {
+    margin-top: 40px;
+  }
+}
 .photos__item img {
   border-radius: 11px;
+  width: 100%;
 }
 .photos__item-text {
   max-width: 320px;
   margin-bottom: 100px;
+}
+@media (max-width: 767.98px) {
+  .photos__item-text {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 479.98px) {
+  .photos__item-text {
+    margin-bottom: 10px;
+  }
 }
