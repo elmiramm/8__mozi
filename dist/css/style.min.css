@@ -760,6 +760,9 @@ button {
     margin-bottom: 12px;
   }
 }
+.intro__title span {
+  color: #BF0830;
+}
 .intro__text {
   font-size: 22px;
 }
@@ -783,6 +786,9 @@ button {
   }
 }
 .page__products .intro__buttons, .page__about .intro__buttons {
+  display: none;
+}
+.page__career .intro__buttons .intro__btn:first-child {
   display: none;
 }
 .intro__btn:not(:last-child) {
@@ -898,6 +904,16 @@ button {
 @media (max-width: 690px) {
   .page__about .intro__img img {
     display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .page__career .intro__img img {
+    top: -53px;
+  }
+}
+@media (max-width: 830px) {
+  .page__career .intro__img img {
+    top: -10px;
   }
 }
 
@@ -1166,7 +1182,7 @@ button {
   }
 }
 .page__about .join {
-  padding: 150px 0 157px;
+  padding: 0 0 157px;
 }
 @media (max-width: 991.98px) {
   .page__about .join {

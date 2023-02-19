@@ -43,7 +43,10 @@
 		}
 		@media (max-width: $bp768) {
 			margin-bottom: 12px;
-			}
+		}
+		& span {
+			color: $accentColor;
+		}
 	}
 	&__text {
 		font-size: 22px;
@@ -68,6 +71,11 @@
 		.page__products &,
 		.page__about & {
 			display: none;
+		}
+		.page__career & {
+			& .intro__btn:first-child {
+				display: none;
+			}
 		}
 	}
 	&__btn {
@@ -158,6 +166,16 @@
 				display: none;
 			}
 		}
+		}
+		.page__career & {
+			& img {
+				@media (max-width: $bp992) {
+					top: -53px;
+				}
+				@media (max-width: 830px) {
+					top: -10px;
+				}
+			}
 		}
 	}
 }
