@@ -14,6 +14,7 @@
 		text-align: left;
 		background-color: #fff;
 		border-radius: 8px;
+		position: relative;
 		@media (max-width:$bp992) {
 			max-width: 45%;
 		}
@@ -22,12 +23,22 @@
 			padding: 25px;
 		}
 	}
+	&__icon {
+		position: absolute;
+		top: 33px;
+		@media (max-width: 680px) {
+			top: 17px;
+		}
+	}
 	&__item-title {
 		margin-bottom: 32px;
 		font-size: 28px;
 		line-height: 1.1;
 		@media (max-width: 350px) {
 			font-size: 21px;
+		}
+		.page__career & {
+			padding-left: 54px;
 		}
 	}
 }

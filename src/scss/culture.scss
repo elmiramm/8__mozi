@@ -6,6 +6,12 @@
 	@media (max-width:$bp992) {
 		padding-bottom: 50px;
 	}
+	.page__career & {
+		padding-bottom: 42px;
+	}
+	&--without-bg {
+		background: #fff;
+	}
 	&__text {
 		margin-bottom: 97px;
 	}
