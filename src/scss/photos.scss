@@ -1,0 +1,24 @@
+.photos {
+	background: $gradient;
+	padding: 58px 0;
+	&__body {
+		display: flex;
+		gap: 30px;
+	}
+	&__column {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		justify-content: space-between;
+	}
+	&__item .title {
+		margin-top: 100px;
+	}
+	&__item img {
+		border-radius: 11px;
+	}
+	&__item-text {
+		max-width: 320px;
+		margin-bottom: 100px;
+	}
+}

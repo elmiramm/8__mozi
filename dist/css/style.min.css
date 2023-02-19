@@ -1620,3 +1620,28 @@ button {
 .wedo__text:not(:last-child) {
   margin-bottom: 30px;
 }
+
+.photos {
+  background: linear-gradient(to left, #E3E7F6, transparent);
+  padding: 58px 0;
+}
+.photos__body {
+  display: flex;
+  gap: 30px;
+}
+.photos__column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+}
+.photos__item .title {
+  margin-top: 100px;
+}
+.photos__item img {
+  border-radius: 11px;
+}
+.photos__item-text {
+  max-width: 320px;
+  margin-bottom: 100px;
+}
