@@ -1317,27 +1317,27 @@ button {
   }
 }
 
-.cards {
+.stats {
   margin-bottom: 83px;
 }
-.cards__container {
+.stats__container {
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 @media (max-width: 1199.98px) {
-  .cards__container {
+  .stats__container {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
   }
 }
 @media (max-width: 479.98px) {
-  .cards__container {
+  .stats__container {
     margin: 0 -15px;
   }
 }
-.cards__item {
+.stats__item {
   min-height: 318px;
   min-width: 317px;
   padding-top: 53px;
@@ -1347,11 +1347,11 @@ button {
   box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
 }
 @media (max-width: 479.98px) {
-  .cards__item {
+  .stats__item {
     min-width: 250px;
   }
 }
-.cards__item-title {
+.stats__item-title {
   color: #1A2578;
   font-weight: 700;
   font-size: 56px;
@@ -1359,15 +1359,15 @@ button {
   margin-bottom: 18px;
 }
 @media (max-width: 479.98px) {
-  .cards__item-title {
+  .stats__item-title {
     font-size: 40px;
   }
 }
-.cards__item-text {
+.stats__item-text {
   font-size: 22px;
   line-height: 1.5;
 }
-.cards__item-img {
+.stats__item-img {
   position: absolute;
   display: block;
   width: 100%;
