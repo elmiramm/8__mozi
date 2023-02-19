@@ -5,6 +5,10 @@
 	@media (max-width: $bp768) {
 		padding: 40px 0;
 	}
+	.page__about & {
+		padding: 150px 0 157px;
+	}
+	
 	&__body {
 		display: flex;
 		justify-content: space-between;
@@ -20,15 +24,24 @@
 	&__text {
 		line-height: 1.69;
 		margin-bottom: 16px;
+		.page__about & {
+			margin-bottom: 40px;
+		}
 	}
 	&__btn {
 		margin-bottom: 16px;
+		.page__about & {
+			margin-bottom: 14px;
+		}
 	}
 	&__img {
 		max-width: 523px;
 		& img {
 			width: 100%;
 		}
+	}
+	& .bethenext {
+		padding-left: 80px;
 	}
 }
 

@@ -1165,6 +1165,9 @@ button {
     padding: 40px 0;
   }
 }
+.page__about .join {
+  padding: 150px 0 157px;
+}
 .join__body {
   display: flex;
   justify-content: space-between;
@@ -1183,14 +1186,23 @@ button {
   line-height: 1.69;
   margin-bottom: 16px;
 }
+.page__about .join__text {
+  margin-bottom: 40px;
+}
 .join__btn {
   margin-bottom: 16px;
+}
+.page__about .join__btn {
+  margin-bottom: 14px;
 }
 .join__img {
   max-width: 523px;
 }
 .join__img img {
   width: 100%;
+}
+.join .bethenext {
+  padding-left: 80px;
 }
 
 .cookieyes {
