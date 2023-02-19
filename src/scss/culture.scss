@@ -1,5 +1,11 @@
 .culture {
 	text-align: center;
+	background: $gradient;
+	padding-bottom: 97px;
+	padding-top: 57px;
+	@media (max-width:$bp992) {
+		padding-bottom: 50px;
+	}
 	&__text {
 		margin-bottom: 97px;
 	}
