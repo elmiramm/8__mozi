@@ -1432,3 +1432,59 @@ button {
     font-size: 21px;
   }
 }
+
+.whoweare {
+  background: linear-gradient(to left, #E3E7F6, transparent);
+  padding-bottom: 157px;
+}
+@media (max-width: 991.98px) {
+  .whoweare {
+    padding-bottom: 50px;
+  }
+}
+.whoweare__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+@media (max-width: 991.98px) {
+  .whoweare__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.whoweare__content {
+  max-width: 405px;
+  padding-top: 40px;
+}
+@media (max-width: 991.98px) {
+  .whoweare__content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0px;
+  }
+}
+.whoweare__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.whoweare__img {
+  position: relative;
+}
+.whoweare__img img {
+  width: 100%;
+}
+.whoweare__img img:last-child {
+  position: relative;
+  z-index: 2;
+}
+.whoweare__bg-img {
+  position: absolute;
+  right: -40px;
+  z-index: 1;
+}
+@media (max-width: 991.98px) {
+  .whoweare__bg-img {
+    bottom: -80px;
+    right: -80px;
+  }
+}

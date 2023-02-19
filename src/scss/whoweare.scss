@@ -1,0 +1,50 @@
+.whoweare {
+	background: $gradient;
+	padding-bottom: 157px;
+	@media (max-width: $bp992) {
+		padding-bottom: 50px;
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+		@media (max-width: $bp992) {
+			flex-direction: column-reverse;
+			align-items: center;
+
+		}
+	}
+	&__content {
+		max-width: 405px;
+		padding-top: 40px;
+		@media (max-width: $bp992) {
+			max-width: 100%;
+			text-align: center;
+			padding-top: 0px;
+
+		}
+	}
+	&__text:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	&__img {
+		position: relative;
+	}
+	&__img img {
+		width: 100%;
+	}
+	&__img img:last-child {
+		position: relative;
+		z-index: 2;
+	}
+	&__bg-img {
+		position: absolute;
+		right: -40px;
+		z-index: 1;
+		@media (max-width: $bp992) {
+			bottom: -80px;
+			right: -80px;
+		}
+
+	}
+}
