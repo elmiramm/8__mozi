@@ -360,6 +360,9 @@ button {
     font-size: 30px;
   }
 }
+.jointhepack .title {
+  text-align: center;
+}
 
 .suptitle {
   text-transform: uppercase;
