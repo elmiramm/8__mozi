@@ -1688,3 +1688,27 @@ button {
     margin-bottom: 10px;
   }
 }
+
+.circular-progress {
+  position: relative;
+  height: 109px;
+  width: 109px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(#0DAA41 342deg, #D3E0D7 0deg);
+  border-radius: 50%;
+}
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  background: #F7F8FF;
+  border-radius: 50%;
+}
+.circular-progress__value {
+  position: relative;
+  font-size: 27px;
+  color: #0DAA41;
+}
