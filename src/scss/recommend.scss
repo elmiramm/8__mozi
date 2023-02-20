@@ -9,11 +9,23 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (max-width: $bp992) {
+			padding: 35px 20px;
+		}
+		@media (max-width: $bp768) {
+			flex-direction: column-reverse;
+		}
 	}
 	&__item {
 		&--left {
 			display: flex;
 			gap: 27px;
+			align-items: center;
+			margin-top: 23px;
+			@media (max-width: $bp480) {
+				flex-direction: column;
+				gap: 10px;
+			}
 		}
 		&--right {
 			text-align: center;
@@ -23,6 +35,12 @@
 		font-size: 36px;
 		line-height: 1.33;
 		font-weight: 700;
+		@media (max-width: $bp992) {
+			font-size: 30px;
+		}
+		@media (max-width: $bp480) {
+			text-align: center;
+		}
 	}
 	&__title {
 		font-size: 36px;

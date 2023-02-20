@@ -1725,9 +1725,27 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .recommend__container {
+    padding: 35px 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .recommend__container {
+    flex-direction: column-reverse;
+  }
+}
 .recommend__item--left {
   display: flex;
   gap: 27px;
+  align-items: center;
+  margin-top: 23px;
+}
+@media (max-width: 479.98px) {
+  .recommend__item--left {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .recommend__item--right {
   text-align: center;
@@ -1736,6 +1754,16 @@ button {
   font-size: 36px;
   line-height: 1.33;
   font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .recommend__text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 479.98px) {
+  .recommend__text {
+    text-align: center;
+  }
 }
 .recommend__title {
   font-size: 36px;
@@ -1786,6 +1814,12 @@ button {
 .stars__box {
   display: flex;
   gap: 4px;
+}
+@media (max-width: 479.98px) {
+  .stars__item svg {
+    height: 30px;
+    width: auto;
+  }
 }
 .stars__value {
   font-weight: 700;

@@ -7,6 +7,14 @@
 		display: flex;
 		gap: 4px;
 	}
+	&__item {
+		@media (max-width: $bp480) {
+			svg {
+				height: 30px;
+				width: auto;
+			}
+		}
+	}
 	&__value {
 		font-weight: 700;
 		font-size: 36px;
