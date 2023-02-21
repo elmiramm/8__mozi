@@ -1,0 +1,19 @@
+.jointhepack {
+	text-align: center;
+	margin-bottom: 44px;
+	&__text {
+		margin-bottom: 101px;
+		@media (max-width: $bp992) {
+			margin-bottom: 50px;
+		}
+	}
+	&__btn {
+		margin-top: 68px;
+		@media (max-width: $bp992) {
+			margin-top: 50px;
+		}
+		@media (max-width: $bp480) {
+			width: 100%;
+		}
+	}
+}

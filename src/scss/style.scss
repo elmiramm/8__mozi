@@ -154,9 +154,6 @@ button {
 	@media (max-width: $bp768) {
 			font-size: 30px;
 		}
-		.jointhepack & {
-			text-align: center;
-		}
 }
 .suptitle {
 	text-transform: uppercase;
@@ -193,5 +190,8 @@ button {
 @import "circular-progress.scss";
 @import "recommend.scss";
 @import "stars.scss";
+@import "jointhepack.scss";
+@import "jobs.scss";
+
 
 
