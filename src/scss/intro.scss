@@ -65,6 +65,9 @@
 				margin-bottom: 18px;
 			}
 		}
+		.page__contact & {
+			font-size: 18px;
+		}
 			
 	}
 	&__buttons {
@@ -72,7 +75,8 @@
 		.page__about & {
 			display: none;
 		}
-		.page__career & {
+		.page__career &,
+		.page__contact & {
 			& .intro__btn:first-child {
 				display: none;
 			}
@@ -174,6 +178,18 @@
 				}
 				@media (max-width: 830px) {
 					top: -10px;
+				}
+			}
+		}
+		.page__contact & {
+			& img {
+				top: 8px;
+			
+				@media (max-width: $bp992) {
+					top: -24px;
+				}
+				@media (max-width: $bp768) {
+					top: 30px;
 				}
 			}
 		}
